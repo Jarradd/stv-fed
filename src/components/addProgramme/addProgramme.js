@@ -26,7 +26,7 @@ class AddProgramme extends React.Component {
         let id = this.state.id;
         let name = this.state.name;
         let shortDescription = this.state.shortDescription;
-        const active = JSON.parse(this.state.active);
+        let active = JSON.parse(this.state.active);
 
         const players = this.props.data;
         players.unshift({
