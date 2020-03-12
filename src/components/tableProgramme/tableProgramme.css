@@ -1,0 +1,139 @@
+.allProgrammes {
+    margin: 8px;
+}
+
+.programmeHeadings-Mobile {
+    display: none;
+}
+
+.programmeHeadings, .programmes {
+    display: flex;
+}
+
+.programmeHeadings > div, .programmes > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 12px 0;
+    text-align: center;
+    border: solid thin #ddd;
+}
+
+.sort-direction {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.sort-direction.asc {
+    border-bottom: 5px solid black;
+}
+
+.sort-direction.desc {
+    border-top: 5px solid black;
+}
+
+.programmes.inactive {
+    background: gray;
+    color: white;
+}
+
+.editableInput {
+    border: 0;
+    border-bottom: solid thin;
+    background: transparent;
+}
+
+.editableInput:focus {
+    outline: none;
+}
+
+.removeItem img {
+    width: 24px;
+    height: 24px;
+}
+
+.edit button {
+    border: 2px solid #ddd;
+    border-radius: 0.25rem;
+    height: 35px;
+    font-weight: 400;
+    padding: 0 1rem;
+    width: auto;
+    max-width: 100%;
+    color: black;
+    margin: 0;
+    display: inline-block;
+    transition: .2s;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button.editRow {
+    background-color: #3ecadd;
+    border: 2px solid #3ecadd;
+}
+
+button.cancelRow {
+    background-color: #dc3545;
+    border: 2px solid #dc3545;
+    color: white;
+    margin: 0 0 0 1rem;
+}
+
+@media (max-width: 768px) {
+
+    .groupedProgrammes {
+        overflow: hidden;
+        margin-bottom: 1rem;
+    }
+
+    .allProgrammes {
+        padding: 10px;
+        margin: 0 8px;
+    }
+
+    .programmeHeadings {
+        display: none;
+    }
+
+    .programmeHeadings-Mobile {
+        display: block;
+        width: 50%;
+        float: left;
+    }
+
+    .programmeHeadings-Mobile > div {
+        padding: 12px 0;
+        text-align: center;
+        border: solid thin #ddd;
+        height: 2rem;
+    }
+
+    .programmes {
+        overflow: hidden;
+        display: block;
+        width: 50%;
+        float: left;
+    }
+
+    .programmes > div {
+        display: block;
+        position: relative;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        height: 2rem;
+    }
+
+    .editableInput {
+        width: 90%;
+    }
+
+}

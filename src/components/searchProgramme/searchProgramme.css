@@ -1,0 +1,30 @@
+.programmeSearch {
+    overflow: hidden;
+    text-align: center;
+    background-color: #e9e9e9;
+}
+
+.programmeSearch-Filter {
+    width: 25%;
+    height: 35px;
+    margin: 8px;
+    border-radius: .25rem;
+    border: 0;
+    -webkit-box-shadow: inset 0 0 0 1px #ced0d9;
+    box-shadow: inset 0 0 0 1px #ced0d9;
+    padding: 0 15px;
+    font-family: sofia-pro,sofia pro,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    -webkit-appearance: none;
+    -webkit-transition: box-shadow .3s ease;
+    -webkit-transition: -webkit-box-shadow .3s ease;
+    transition: -webkit-box-shadow .3s ease;
+    transition: box-shadow .3s ease;
+    transition: box-shadow .3s ease,-webkit-box-shadow .3s ease;
+}
+
+@media (max-width: 768px) {
+    .programmeSearch-Filter {
+        width: 50%;
+    }
+}
