@@ -106,7 +106,6 @@ class tableProgramme extends React.Component {
     };
 
     updateAddProgramme = (e) => {
-
         let value = e.target.value;
         this.setState({
             [e.target.id]: value,
@@ -114,11 +113,9 @@ class tableProgramme extends React.Component {
             [e.target.shortDescription]: value,
             [e.target.active]: value
         });
-
     };
 
     save(index, e) {
-
         const programmes = this.state.filterData.map(item => ({ ...item }))
 
         if ( this.state.id !== '' ) {

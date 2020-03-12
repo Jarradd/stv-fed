@@ -23,7 +23,6 @@ class AddProgramme extends React.Component {
     };
 
     addProgramme = () => {
-
         let id = this.state.id;
         let name = this.state.name;
         let shortDescription = this.state.shortDescription;
