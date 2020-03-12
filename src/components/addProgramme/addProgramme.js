@@ -8,7 +8,7 @@ class AddProgramme extends React.Component {
             id: '',
             name: '',
             shortDescription: '',
-            active: null
+            active: true
         };
     };
 
@@ -68,7 +68,6 @@ class AddProgramme extends React.Component {
                     id="active"
                     value={this.state.active}
                     onChange={this.handleAddProgramme}>
-                    <option value="null">Please Select Programme Status</option>
                     <option value="true">True</option>
                     <option value="false">False</option>
                 </select>
